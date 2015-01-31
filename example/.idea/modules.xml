@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android_client_library/android_client_library.iml" filepath="$PROJECT_DIR$/android_client_library/android_client_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_thirdparty/android_thirdparty.iml" filepath="$PROJECT_DIR$/android_thirdparty/android_thirdparty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example.iml" filepath="$PROJECT_DIR$/example.iml" />
+    </modules>
+  </component>
+</project>
+

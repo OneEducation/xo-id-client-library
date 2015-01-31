@@ -1,0 +1,3 @@
+# Copy this file to local.properties and edit accordingly
+#
+sdk.dir=/path/to/your/android/sdk
