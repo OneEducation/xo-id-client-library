@@ -66,7 +66,8 @@ public class XoDataServiceConnection {
   private void ensureBoundToService() {
     serviceConnectionLock.readLock().lock();
     if (remoteService == null) {
-      Intent intent = new Intent(DATA_ACTION);
+      Intent intent = new Intent();
+      intent.setComponent(new ComponentName("com.xosignin", "com.xosignin.service.XoDataService"));
       context.bindService(intent, connection, Context.BIND_AUTO_CREATE);
     }
     serviceConnectionLock.readLock().unlock();
