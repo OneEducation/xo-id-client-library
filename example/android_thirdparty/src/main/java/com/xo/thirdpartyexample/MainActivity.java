@@ -1,7 +1,7 @@
 package com.xo.thirdpartyexample;
 
 
-import com.xoid.xodatainterface.XoDataProvider;
+import org.oneedu.xoid.xodatainterface.XoDataProvider;
 
 import android.app.Activity;
 import android.os.Bundle;
