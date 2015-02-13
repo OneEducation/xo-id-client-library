@@ -1,4 +1,4 @@
-package com.xosignin.service.aidl;
+package org.oneedu.xoid.service.aidl;
 
 interface IXoServiceInterface {
 

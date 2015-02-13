@@ -1,10 +1,10 @@
-package com.xoid.xodatainterface;
+package org.oneedu.xoid.xodatainterface;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import com.xosignin.service.aidl.IXoServiceInterface;
+import org.oneedu.xoid.service.aidl.IXoServiceInterface;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.util.Log;
 
 public class XoDataServiceConnection {
   private static final String TAG = "XoDataServiceConnection";
-  private static final String DATA_ACTION = "com.xosignin.xodataservice.GET_DATA";
+  private static final String DATA_ACTION = "org.oneedu.xoid.xodataservice.GET_DATA";
   
   private ReadWriteLock serviceConnectionLock = new ReentrantReadWriteLock();
   private CountDownLatch serviceConnectionLatch = new CountDownLatch(1);
@@ -67,7 +67,7 @@ public class XoDataServiceConnection {
     serviceConnectionLock.readLock().lock();
     if (remoteService == null) {
       Intent intent = new Intent();
-      intent.setComponent(new ComponentName("com.xosignin", "com.xosignin.service.XoDataService"));
+      intent.setComponent(new ComponentName("org.oneedu.xoid", "org.oneedu.xoid.service.XoDataService"));
       context.bindService(intent, connection, Context.BIND_AUTO_CREATE);
     }
     serviceConnectionLock.readLock().unlock();

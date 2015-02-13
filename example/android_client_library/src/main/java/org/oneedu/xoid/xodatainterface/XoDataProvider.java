@@ -1,4 +1,4 @@
-package com.xoid.xodatainterface;
+package org.oneedu.xoid.xodatainterface;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -21,7 +21,7 @@ public class XoDataProvider {
   }
   
   public void launchLoginActivity(Context context) {
-    Intent intent = new Intent("com.xosignin.xodataservice.LAUNCH_LOGIN");
+    Intent intent = new Intent("org.oneedu.xoid.xodataservice.LAUNCH_LOGIN");
     context.startActivity(intent);
   }
   
